@@ -1,0 +1,73 @@
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Urlop</title>
+<link rel="stylesheet" href="index.css" >
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Urlopik.pl</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="logowanie-pracownik.html#logpracownik">Logowanie
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rejestracja.html#rejestracja">Rejestracja</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <h1>Rejestracja</h1>
+
+
+
+  </p>
+
+    <p class="image"><div style="text-align: center"><img src="images/resort.png" alt="resort" width="150" height="150" position="absolute" top="80px"></div></p>
+        <form action="PracownikServlet" command="register" method="post" >
+
+          <input name="command" value="register"  type="hidden">
+          </br>
+
+          <label for="imie">Imię i nazwisko:</label>
+          <input name="nameInput" type="text" class="form-control" id="imie" aria-describedby="imie" placeholder="Imię i nazwisko" required = "required">
+
+          <label for="login">login:</label>
+          <input name="loginInput" type="text" class="form-control" id="login" aria-describedby="login" placeholder="login" required = "required">
+
+          <label for="haslo">hasło:</label>
+          <input name="passwordInput" type="password" class="form-control" id="haslo" aria-describedby="haslo" placeholder="hasło" required = "required">
+
+          <label for="haslo2">hasło:</label>
+          <input name="passwordInput2" type="password" class="form-control" id="haslo2" aria-describedby="haslo" placeholder="powtorz hasło" required = "required">
+
+          <label for="rok">Rok Zatrudnienia:</label>
+          <input name="yearInput" type="number" class="form-control" id="rok" aria-describedby="haslo" placeholder="Rok zatrudnienia" required = "required">
+
+          <br/>
+          <br/>
+          <button type="submit" class="btn btn-secondary">Utwórz Konto</button>
+        </form>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p >
+
+<a href="logowanie-pracownik.html#logpracownik" class="btn btn-primary" role="button"> Panel pracownika</a></button>
+
+</p>
+  </body>
+</html>
